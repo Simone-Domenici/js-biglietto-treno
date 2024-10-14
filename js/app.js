@@ -7,5 +7,16 @@ const age = parseInt(prompt("Quanti anni hai?"));
 
 // Calcolo prezzo base
 
- const ticketPrice = (userKm * 0.21)
+const ticketPrice = (userKm * 0.21)
 console.log(ticketPrice)
+
+// Sconti in base all'età
+
+let discount = 0;
+if (age < 18) {
+  discount = 0.2; // Sconto del 20%
+} else if (age >= 65) {
+  discount = 0.4; // Sconto del 40%
+}
+// console.log(age, discount)
+
