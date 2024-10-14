@@ -1,14 +1,14 @@
 // Informazioni utente
 
 const userKm = parseFloat(prompt('Quanti km vuoi percorrere?'))
-const age = parseInt(prompt("Quanti anni hai?"));
+const age = parseInt(prompt('Quanti anni hai?'));
 // console.log(userKm)
 // console.log(age)
 
 // Calcolo prezzo base
 
 const ticketPrice = (userKm * 0.21)
-console.log(ticketPrice)
+// console.log(ticketPrice)
 
 // Sconti in base all'età
 
@@ -20,3 +20,8 @@ if (age < 18) {
 }
 // console.log(age, discount)
 
+// Prezzo finale con lo sconto
+
+const finalPrice = ticketPrice - (ticketPrice * discount);
+
+console.log(finalPrice)
