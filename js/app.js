@@ -23,5 +23,11 @@ if (age < 18) {
 // Prezzo finale con lo sconto
 
 const finalPrice = ticketPrice - (ticketPrice * discount);
+// console.log(finalPrice)
 
-console.log(finalPrice)
+// Prezzo con formato a due cifre decimali
+
+const formattedPrice = finalPrice.toFixed(2)
+// console.log(formattedPrice)
+
+alert(`Il prezzo del tuo biglietto è di ${formattedPrice} \u20ac`)
